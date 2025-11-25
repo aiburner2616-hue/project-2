@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap');
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Lora', serif;
+    --primary-color: #3a2e2a;
+    /* Deep Brown */
+    --secondary-color: #c4a47c;
+    /* Gold */
+    --background-color: #fdfaf6;
+    /* Off-white */
+    --text-color: #333333;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* --- Hero Section --- */
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-background.jpg') no-repeat center center/cover;
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--white-color);
+}
+
+.hero-section .sub-headline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #b89569;
+    transform: translateY(-3px);
+}
+
+
+/* --- Trust Bar --- */
+
+.trust-bar {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px 0;
+}
+
+.trust-bar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.trust-item span {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+
+/* --- Sections --- */
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+
+/* --- Benefits Section --- */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-item img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+/* --- Why Us Section --- */
+
+.why-us-section {
+    background-color: var(--white-color);
+}
+
+.why-us-section p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Testimonials Section --- */
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-left: 5px solid var(--secondary-color);
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-item h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+/* --- Final CTA Section --- */
+
+.final-cta-section {
+    background-color: #f4f0eb;
+}
+
+.pricing {
+    margin-bottom: 1rem;
+}
+
+.original-price {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 15px;
+}
+
+.offer-price {
+    font-size: 3.5rem;
+    color: #d35400;
+    /* Offer color */
+    font-weight: 700;
+}
+
+.savings h3 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.urgency {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.final-cta {
+    font-size: 1.3rem;
+    padding: 20px 45px;
+}
+
+
+/* --- Footer --- */
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* --- Mobile First --- */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .trust-bar .container {
+        flex-direction: column;
+    }
+    section h2 {
+        font-size: 1.8rem;
+    }
+    .offer-price {
+        font-size: 3rem;
+    }
+}
